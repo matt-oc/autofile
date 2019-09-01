@@ -40,7 +40,7 @@ class AutofileView : BaseView(), AnkoLogger {
 
     presenter = initPresenter (AutofilePresenter(this)) as AutofilePresenter
 
-    chooseImage.setOnClickListener { presenter.doSelectImage();   setResult(RESULT_OK) }
+    chooseImage.setOnClickListener { presenter.doSelectImage()}
 
     mapView.onCreate(savedInstanceState);
     mapView.getMapAsync {
